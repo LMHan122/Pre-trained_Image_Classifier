@@ -1,3 +1,5 @@
+'''This script was provided as part of this project'''
+
 import ast
 from PIL import Image
 import torchvision.transforms as transforms

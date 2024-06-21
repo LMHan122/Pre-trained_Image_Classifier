@@ -14,9 +14,9 @@ def get_input_args():
       3. Text File with Dog Names as --dogfile with default value 'dognames.txt'
     This function returns these arguments as an ArgumentParser object.
     Parameters:
-     None - simply using argparse module to create & store command line arguments
+        None
     Returns:
-     parse_args() -data structure that stores the command line arguments object  
+        parse_args() -data structure that stores the command line arguments object
     """
     # Create Parse using ArgumentParser
     parser = argparse.ArgumentParser()

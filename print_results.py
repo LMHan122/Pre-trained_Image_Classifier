@@ -1,5 +1,4 @@
-
-def print_results(results_dic, results_stats_dic, model, 
+def print_results(results_dic, results_stats_dic, model,
                   print_incorrect_dogs = False, print_incorrect_breed = False):
     """
     Prints summary results on the classification and then prints incorrectly 
@@ -16,23 +15,20 @@ def print_results(results_dic, results_stats_dic, model,
                     idx 4 = 1/0 (int)  where 1 = Classifier classifies image 
                             'as-a' dog and 0 = Classifier classifies image  
                             'as-NOT-a' dog.
-      results_stats_dic - Dictionary that contains the results statistics (either
-                   a  percentage or a count) where the key is the statistic's 
-                     name (starting with 'pct' for percentage or 'n' for count)
-                     and the value is the statistic's value 
+      results_stats_dic - Dictionary that contains the results statistics
       model - Indicates which CNN model architecture will be used by the 
               classifier function to classify the pet images,
-              values must be either: resnet alexnet vgg (string)
+              values must be either: 'resnet', 'alexnet', 'vgg'
       print_incorrect_dogs - True prints incorrectly classified dog images and 
                              False doesn't print anything(default) (bool)  
       print_incorrect_breed - True prints incorrectly classified dog breeds and 
                               False doesn't print anything(default) (bool) 
     Returns:
-           None - simply printing results.
+           None
     """    
     print()
     print()
-    print("*** Results Summary for CNN Model Architecture ",model, 
+    print("*** Results Summary for CNN Model Architecture ", model,
           "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
