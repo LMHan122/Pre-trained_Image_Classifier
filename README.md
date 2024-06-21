@@ -11,18 +11,21 @@ If the user fails to provide some or all of the 3 arguments, then the default
 values are used for the missing arguments. 
 
    Command Line Arguments:
+
       1. Image Folder as --dir with default value 'pet_images'
+
       2. CNN Model Architecture as --arch with default value 'vgg' (options: 'vgg', 'alexnet', 'resnet')
+
       3. Text File with Dog Names as --dogfile with default value 'dognames.txt'
 
 If you want to run all 3 models, you can use the bash files in the terminal.
-**run_models_batch.sh:** Runs all 3 models against pictures on drive. Outputs to a .txt file.
-**run_models_batch_uploaded.sh:** Runs all 3 models against uploaded. Outputs to a .txt file.
+- **run_models_batch.sh:** Runs all 3 models against pictures on drive. Outputs to a .txt file.
+- **run_models_batch_uploaded.sh:** Runs all 3 models against uploaded. Outputs to a .txt file.
 
 
 ## Other Python 
 
-**adjust_results4_isadog.py:** script that adjusts the dictionary to determin if the classifier 
+- **adjust_results4_isadog.py:** script that adjusts the dictionary to determin if the classifier 
 	correctly classified images 'as a dog' or 'not a dog'
 **calculates_results_stats.py:** calculates statistics of the results using classifier's model 
 	architecture to classifying pet images.
