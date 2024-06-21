@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 def adjust_results4_isadog(results_dic, dogfile):
     """
